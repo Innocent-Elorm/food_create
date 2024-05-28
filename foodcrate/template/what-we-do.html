@@ -1,0 +1,311 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>What we do | Food Crate</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="icon" href="{% static 'images/foodcreate_logo.png' %}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+            <div class="container nav">
+                <a href="{% url 'home' %}" class="navbar-brand logo">
+                    <img class="img-fluid" src="{% static 'images/foodcrate_logo.jpg' %}" alt="Logo">
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hpnav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hpnav">
+                    <ul class="navbar-nav mx-auto links">
+                        <li class="nav-item m-1">
+                            <a href="{% url 'who-we-are'%}" class="nav-link text-dark">
+                                Who we are
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'what-we-do'%}" class="nav-link text-dark">
+                                What we do
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'who-we-work-with'%}" class="nav-link text-dark">
+                                Who we work with
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'careers' %}" class="nav-link text-dark">
+                                Job/Careers
+                            </a>
+                        </li>
+                        <br>
+                        <li class="nav-item m-1">
+                            <a class="text-decoration-none" href="https://www.paypal.com/gb/fundraiser/charity/3899108">
+                                <button class="career-btn" type="button">Donate</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- body -->
+        <div class="container-fluid text-center">
+            <div id="start1">
+                <br>
+                <div class="text-center">
+                    <h4 class="text-center text-light" style="font-size: 50px; font-weight: bold;">What we do</h4>
+                </div>
+                <br>
+                <img src="{% static 'images/foodcrate_logo.jpg' %}" alt="logo">
+                <p class="vision">
+                    <br>
+                    We campaign for a healthy and sustainable food system, 
+                    which is publicly accountable and socially and environmentally responsible.
+                </p>
+            </div>
+        </div>
+        <!-- Our initiative -->
+        <div class="container-fluid" id="initiative">
+            <div class="text-center text-dark" style="border-radius: 10px;" id="init">
+                <br>
+                <br>
+                <h4 class="text-center" style="font-size: 40px; font-weight: bold;">Our initiatives</h4>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="card mb-3" style="max-width: 90%; background-color: #f6fffb;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{% static 'images/f1.jpg' %}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-weight: bold;">Feeding us</h5>
+                                    <p class="card-text">
+                                        <br>
+                                        If we change the way we farm and what we eat, 
+                                    we could improve our health, protect nature, combat climate 
+                                    change and be more food secure and affordable
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 90%; background-color: #f6fffb;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{% static 'images/f2.jpg' %}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-weight: bold;">Food Insecurity Tracking</h5>
+                                    <p class="card-text">
+                                        We conduct regular surveys to assess food insecurity levels.
+                                        <br>
+                                        Foodcrate has been commissioning a series of surveys since the outbreak of 
+                                    the Covid pandemic in March 2020, to assess the impact of household food 
+                                    insecurity in Ghana. We track and report on the experiences of food insecurity, 
+                                    particularly focusing on specific groups such as families with children, 
+                                    ethnic groups, boarding schools, people with disabilities etc.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 90%; background-color: #f6fffb;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{% static 'images/fix_our_food.jpg' %}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-weight: bold;">Fix-Our-Food</h5>
+                                    <p class="card-text">
+                                        We are working on Fix-Our-Food, movement a 
+                                    research work led by
+                                        <b>kings worth farms.</b>
+                                        Fix-Our-Food has a vision to transform food systems towards 
+                                    being ‘regenerative’.
+                                        <br>
+                                        We are a key partner on the Fix-Our-Food in Schools. The 
+                                    team will be working with schools to transform food menus, 
+                                    environments, education and procurement. We aim to reduce 
+                                    inequalities in health and diet quality early in life and 
+                                    bring about dietary change more broadly. One example of 
+                                    this is our focus on improving food provision.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="max-width: 90%; background-color: #f6fffb;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="{% static 'images/f3.jpg' %}" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-weight: bold;">Measuring sustainability</h5>
+                                    <p class="card-text">
+                                        If we are to measure farming and sustainable food systems, we need to measure our impact…
+                                        <br>
+                                        “If we are to transform our food systems so that the maximum 
+                                    amount of people can eat nutritious food produced in the right 
+                                    ways, we need to work together, share ideas, pool resources 
+                                    and connect as part of a global food movement. Every voice 
+                                    counts.”
+                                        <br>
+                                        <i>
+                                            <b>Patrick Holden</b>
+                                        </i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <!-- True cost of food -->
+        <div class="container-fluid" id="cost-of-food">
+            <div class="text-center bg-success" style="border-radius: 10px;" id="cost-food">
+                <br>
+                <h4 class="text-center text-light" style="font-size: 40px; font-weight: bold;">True cost of food</h4>
+                <p class="card-text" style="font-size: 20px; font-weight: bold; padding: 20px;">
+                    We pay for food in many ways, not just at checkout or food joint, but the 
+                    true cost varies according to how food is produced and how this impacts our 
+                    health and environment
+                </p>
+                <br>
+                <br>
+            </div>
+        </div>
+        <br>
+
+          <!-- Events -->
+        <div class="container-fluid" id="event">
+            <div class="text-center bg-info" style="border-radius: 10px;">
+                <br>
+                <h4 class="text-center text-light" style="font-size: 40px; font-weight: bold;">Events</h4>
+                <p class="card-text" style="font-size: 20px; font-weight: bold; padding: 20px;">
+                    Foodcrate hosts its own event programme in addition to participating in partner 
+                    events across multiple platforms.
+                    <br>
+                    These include campaign and report launches, policy panels, business and cities 
+                    webinars. <br>We record and create films to share with global audiences to engage 
+                    with our work and take action.
+                </p>
+                <br>
+                <br>
+            </div>
+        </div>
+        <br>     
+
+        
+
+        <!--Footer-->
+        <footer class="bg-success text-light mt-5">
+            <div class="container">
+                <div class="row border-bottom mb-2 py-2">
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">Who we are</h4>
+                        <a href="{% url 'who-we-are' %}" class="text-white text-decoration-none">
+                            Mission
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-are' %}" class="text-white text-decoration-none">
+                            Vision
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-are' %}" class="text-white text-decoration-none">
+                            Core Values
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">What we do</h4>
+                        <a href="#initiative" class="text-white text-decoration-none">
+                            Our Initiative
+                        </a>
+                        <br>
+                        <a href="#cost-of-food" class="text-white text-decoration-none">
+                            True Cost of Food
+                        </a>
+                        <br>
+                        <a href="#event" class="text-white text-decoration-none">
+                            Events
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="border-bottom">Who we work with</h4>
+                        <a href="{% url 'who-we-work-with' %}" class="text-white text-decoration-none">
+                            Policy Makers
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-work-with' %}" class="text-white text-decoration-none">
+                            Communities
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-work-with' %}" class="text-white text-decoration-none">
+                            Civil Societies
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">Get involve</h4>
+                        <a href="{% url 'careers' %}" class="text-white text-decoration-none">
+                            Jobs/Career
+                        </a>
+                        <br>
+                        <a href="https://www.paypal.com/gb/fundraiser/charity/3899108" class="text-white text-decoration-none">
+                            Donate
+                        </a>
+                        <br>
+                        <a href="{% url 'contact' %}" class="text-white text-decoration-none">
+                            Contact
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-2 d-none d-lg-block">
+                        <div class="text-center fs-3 text-black img">
+                            <br>
+                            <img src="{% static 'images/foodcreate_logo.png'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        &copy
+                        <span id="year"></span>
+                        Food Crate
+                    </div>
+                    <div class="col text-lg-end">
+                        Developed by El-Tech
+                        (+233(0)24 691 9433)
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

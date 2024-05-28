@@ -1,0 +1,252 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Careers | Food Crate</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="icon" href="{% static 'images/foodcreate_logo.png' %}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+            <div class="container nav">
+                <a href="{% url 'home' %}" class="navbar-brand logo">
+                    <img class="img-fluid" src="{% static 'images/foodcrate_logo.jpg' %}" alt="Logo">
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hpnav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hpnav">
+                    <ul class="navbar-nav mx-auto links">
+                        <li class="nav-item m-1">
+                            <a href="{% url 'who-we-are'%}" class="nav-link text-dark">
+                                Who we are
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'what-we-do'%}" class="nav-link text-dark">
+                                What we do
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'who-we-work-with'%}" class="nav-link text-dark">
+                                Who we work with
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'careers' %}" class="nav-link text-dark">
+                                Job/Careers
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- body -->
+        <br>
+        <div class="container-fluid" id="staff">
+            <div class="bg-warning text-center text-dark" style="border-radius: 10px;">
+                <br>
+                <br>
+                <h4 class="text-center text-primary" style="font-size: 40px; font-weight: bold;">Job Opening</h4>
+                <br>
+                <br>
+                <div class="row" style="margin-left: 10px; margin-right: 10px;">
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">SENIOR PROJECT OFFICER</h5>
+                                <p class="card-text">
+                                    Reducing health inequalities, children’s health 
+                                    and wellbeing, and sustainable and nutritious food system/diets.
+                                </p>
+                                <br>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">HEAD OF POLICY AND ADVOCACY</h5>
+                                <p class="card-text">
+                                    Will head Policy & Advocacy and oversee 
+                                    our portfolio of policy and Government engagement activities.
+                                </p>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">BUSINESS AND INVESTOR MANAGER</h5>
+                                <p class="card-text">
+                                    Manages our business and investor 
+                                    engagement team, with oversight of our work engaging food businesses
+                                </p>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">CITIZENS ENGAGEMENT MANAGER</h5>
+                                <p class="card-text">School food element of the Fix-Our-Food research programme of which Foodcrate is a partner.</p>
+                                <br>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">HEAD OF CAMPAIGNS</h5>
+                                <p class="card-text">
+                                    passionate about Media and Campaigns specializing in consumer 
+                                    health and public advocacy campaigns working across all areas of Broadcast, Digital and Print Media.
+                                </p>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">PUBLIC AFFAIRS</h5>
+                                <p class="card-text">should have working experience including the disability and health sectors.</p>
+                                <br>
+                                <br>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">CAMPAIGNS AND RESEARCH</h5>
+                                <p class="card-text">should bring a wealth of knowledge to the role with a BA in Sociology and research expertise.</p>
+                                <br>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card bg-warning border-0">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-weight: bold;">PROJECT OFFICER</h5>
+                                <p class="card-text">Citizen Engagement Officer, to support the Advocates to deliver initiatives that drive up veg consumption.</p>
+                                <br>
+                                <a href="{% url 'apply' %}" class="btn btn-primary">More Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="bg-success text-light mt-5">
+            <div class="container">
+                <div class="row border-bottom mb-2 py-2">
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">Who we are</h4>
+                        <a href="#mission" class="text-white text-decoration-none">
+                            Mission
+                        </a>
+                        <br>
+                        <a href="#vision" class="text-white text-decoration-none">
+                            Vision
+                        </a>
+                        <br>
+                        <a href="#values" class="text-white text-decoration-none">
+                            Core Values
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">What we do</h4>
+                        <a href="{% url 'what-we-do' %}" class="text-white text-decoration-none">
+                            Our Initiative
+                        </a>
+                        <br>
+                        <a href="{% url 'what-we-do' %}" class="text-white text-decoration-none">
+                            True Cost of Food
+                        </a>
+                        <br>
+                        <a href="{% url 'what-we-do' %}" class="text-white text-decoration-none">
+                            Events
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="border-bottom">Who we work with</h4>
+                        <a href="{% url 'who-we-work-with' %}" class="text-white text-decoration-none">
+                            Policy Makers
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-work-with' %}" class="text-white text-decoration-none">
+                            Communities
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-work-with' %}" class="text-white text-decoration-none">
+                            Civil Societies
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">Get involve</h4>
+                        <a href="{% url 'careers' %}" class="text-white text-decoration-none">
+                            Jobs/Career
+                        </a>
+                        <br>
+                        <a href="https://www.paypal.com/gb/fundraiser/charity/3899108" class="text-white text-decoration-none">
+                            Donate
+                        </a>
+                        <br>
+                        <a href="{% url 'contact' %}" class="text-white text-decoration-none">
+                            Contact
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-2 d-none d-lg-block">
+                        <div class="text-center fs-3 text-black img">
+                            <br>
+                            <img src="{% static 'images/foodcreate_logo.png'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        &copy
+                        <span id="year"></span>
+                        Food Crate
+                    </div>
+                    <div class="col text-lg-end">
+                        Developed by El-Tech
+                        (+233(0)24 691 9433)
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>

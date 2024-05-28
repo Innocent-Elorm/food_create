@@ -1,0 +1,262 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Who we work with | Food Crate</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+        <link rel="icon" href="{% static 'images/foodcreate_logo.png' %}">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+            <div class="container nav">
+                <a href="{% url 'home' %}" class="navbar-brand logo">
+                    <img class="img-fluid" src="{% static 'images/foodcrate_logo.jpg' %}" alt="Logo">
+                </a>
+                <button
+                    type="button"
+                    class="navbar-toggler"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hpnav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="hpnav">
+                    <ul class="navbar-nav mx-auto links">
+                        <li class="nav-item m-1">
+                            <a href="{% url 'who-we-are'%}" class="nav-link text-dark">
+                                Who we are
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'what-we-do'%}" class="nav-link text-dark">
+                                What we do
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'who-we-work-with'%}" class="nav-link text-dark">
+                                Who we work with
+                            </a>
+                        </li>
+                        <li class="nav-item m-1">
+                            <a href="{% url 'careers' %}" class="nav-link text-dark">
+                                Job/Careers
+                            </a>
+                        </li>
+                        <br>
+                        <li class="nav-item m-1">
+                            <a class="text-decoration-none" href="https://www.paypal.com/gb/fundraiser/charity/3899108">
+                                <button class="career-btn" type="button">Donate</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <br>
+        <!-- who we work with -->
+        <div class="container-fluid" id="initiative">
+            <div class="text-center text-dark" style="border-radius: 10px;" id="init">
+                <br>
+                <div class="container-fluid" id="vision">
+                    <div class="text-center text-dark" style="border-radius: 10px;">
+                        <br>
+                        <br>
+                        <h4 class="text-center" style="font-size: 40px; font-weight: bold;">Researchers</h4>
+                        <h4 class="text-center" style="font-size: 30px;">How do we work with Researchers?</h4>
+                        <p class="card-text whoweare-text">
+                            We are committed to providing policy makers with data and evidence so 
+                            they can gain insights into the challenges facing the food system and 
+                            generate the most appropriate policy responses. 
+                            As well as conducting our own research, we work closely with researchers 
+                            and academics in organizations and universities in Ghana.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="container-fluid" id="values">
+                    <div class="text-center text-dark" style="border-radius: 10px;">
+                        <br>
+                        <br>
+                        <h4 class="text-center" style="font-size: 40px; font-weight: bold;">Communities</h4>
+                        <h4 class="text-center" style="font-size: 30px;">How do we work with Communities?</h4>
+                        <p class="card-text whoweare-text">
+                            Citizens are key to our work on food system change. We make sure what 
+                            we do is informed by people’s lived experience and we support citizens 
+                            to become agents of change both at a national level and in their own 
+                            communities. We work with young people to give them a platform and 
+                            the tools they need to call for food system change which its work 
+                            of our Young Food Ambassadors who lead
+                            <a class="text-light text-decoration-underline" href="https://foodfoundation.org.uk/initiatives/childrens-right2food">Right2Food.</a>
+                            <br>
+                            We aim to involve citizens across all of our work where voices and action 
+                            can be most effectively targeted at positive food system change.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="container-fluid" id="mission">
+                    <div class="text-center text-dark" style="border-radius: 10px;">
+                        <br>
+                        <br>
+                        <h4 class="text-center" style="font-size: 40px; font-weight: bold;">Civil Societies</h4>
+                        <h4 class="text-center" style="font-size: 30px;">How do we work with Civil Society?</h4>
+                        <p class="card-text whoweare-text1">
+                            As our food systems face multiple challenges, civil society organizations 
+                            (CSOs) play a key role in searching for solutions to transition to a 
+                            healthier, more sustainable food system. By joining efforts, we can 
+                            challenge policy makers, businesses and consumers to think differently 
+                            about the food system and catalyze action so urgently needed.
+                            <br>
+                            We create effective partnerships with a range of civil society actors, 
+                            to coordinate and mobilize collective action to bring about lasting 
+                            change.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="container-fluid" id="mission">
+                    <div class="text-center text-dark" style="border-radius: 10px;">
+                        <br>
+                        <br>
+                        <h4 class="text-center" style="font-size: 40px; font-weight: bold;">Policy Makers</h4>
+                        <h4 class="text-center" style="font-size: 30px;">How we work with Policy Makers?</h4>
+                        <p class="card-text whoweare-text1">
+                            policy thinking at local and national will be essential if we are to 
+                            deliver the transformations to the food system that are needed, though 
+                            we can all individually make small changes to what we eat to improve 
+                            our health.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="container-fluid" id="mission">
+                    <div class="text-center text-dark" style="border-radius: 10px;">
+                        <br>
+                        <br>
+                        <h4 class="text-center" style="font-size: 40px; font-weight: bold;">Press & Media</h4>
+                        <h4 class="text-center" style="font-size: 30px;">How do we work with Press & Media?</h4>
+                        <p class="card-text whoweare-text1">
+                            We work with the press and media to help raise awareness and publicize 
+                            our work, events and reports. We see national and local media as a vital 
+                            strategic partner in getting our messaging heard by different stakeholder 
+                            groups. While our primary aim is to influence business and Government. 
+                            The food system is currently damaging the long-term health of people 
+                            and contributing enormously to greenhouse gas emissions leading to 
+                            climate change.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <!--Footer-->
+        <footer class="bg-success text-light mt-5">
+            <div class="container">
+                <div class="row border-bottom mb-2 py-2">
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">Who we are</h4>
+                        <a href="{% url 'who-we-are' %}" class="text-white text-decoration-none">
+                            Mission
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-are' %}" class="text-white text-decoration-none">
+                            Vision
+                        </a>
+                        <br>
+                        <a href="{% url 'who-we-are' %}" class="text-white text-decoration-none">
+                            Core Values
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">What we do</h4>
+                        <a href="{% url 'what-we-do' %}" class="text-white text-decoration-none">
+                            Our Initiative
+                        </a>
+                        <br>
+                        <a href="{% url 'what-we-do' %}" class="text-white text-decoration-none">
+                            True Cost of Food
+                        </a>
+                        <br>
+                        <a href="{% url 'what-we-do' %}" class="text-white text-decoration-none">
+                            Events
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="border-bottom">Who we work with</h4>
+                        <a href="#" class="text-white text-decoration-none">
+                            Policy Makers
+                        </a>
+                        <br>
+                        <a href="#" class="text-white text-decoration-none">
+                            Communities
+                        </a>
+                        <br>
+                        <a href="#" class="text-white text-decoration-none">
+                            Civil Societies
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="border-bottom">Get involve</h4>
+                        <a href="{% url 'careers' %}" class="text-white text-decoration-none">
+                            Jobs/Career
+                        </a>
+                        <br>
+                        <a href="https://www.paypal.com/gb/fundraiser/charity/3899108" class="text-white text-decoration-none">
+                            Donate
+                        </a>
+                        <br>
+                        <a href="{% url 'contact' %}" class="text-white text-decoration-none">
+                            Contact
+                        </a>
+                        <br>
+                    </div>
+                    <div class="col-2 d-none d-lg-block">
+                        <div class="text-center fs-3 text-black img">
+                            <br>
+                            <img src="{% static 'images/foodcreate_logo.png'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col text-center">
+                        &copy
+                        <span id="year"></span>
+                        Food Crate
+                    </div>
+                    <div class="col text-lg-end">
+                        Developed by El-Tech
+                        (+233(0)24 691 9433)
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+    </body>
+</html>
