@@ -2,12 +2,18 @@
     "builds": [{
         "src": "food_create/wsgi.py",
         "use": "@vercel/python",
-        "config": {"maxLambdaSize": "15mb", "runtime": "python3.9"}
+        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     }],
-    "routes": [
-        {
+    "routes": [{
         "src": "/(.*)",
         "dest": "food_create/wsgi.py"
-        }
-    ]
+    }],
+
+    "headers": [{
+        "source": "/static/css/(.*)",
+        "headers": [{
+            "key": "Content-Type",
+            "value": "text/css"
+        }]
+    }]
 }
