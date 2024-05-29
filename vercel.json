@@ -7,13 +7,5 @@
     "routes": [{
         "src": "/(.*)",
         "dest": "food_create/wsgi.py"
-    }],
-
-    "headers": [{
-        "source": "/static/css/(.*)",
-        "headers": [{
-            "key": "Content-Type",
-            "value": "text/css"
-        }]
     }]
 }
